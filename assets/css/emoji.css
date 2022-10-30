@@ -1,0 +1,26 @@
+.emoji {
+    width: 400px;
+    position: fixed;
+    left: -400px;
+    bottom: 0;
+}
+
+@keyframes show {
+    0% {
+        left: -400px;
+    }
+
+    50% {
+        left: -47px;
+    }
+
+    100% {
+        left: -400px;
+    }
+}
+
+.emoji.show {
+    animation: ease-in-out;
+    animation-name: show;
+    animation-duration: 3s;
+}
